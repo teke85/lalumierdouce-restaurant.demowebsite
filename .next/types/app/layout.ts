@@ -1,4 +1,4 @@
-// File: C:\Users\Teke\Desktop\lalumiere\lalumieredouce-restaurant.demowebsite\app\layout.tsx
+// File: C:\Users\Teke\Desktop\lalumierdouce-restaurant.demowebsite\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
