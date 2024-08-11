@@ -7,13 +7,13 @@ const NavMenu = () => {
     <nav className="shadow-4xl">
     <ul className="flex gap-5 text-sm md:text-xl font-mono font-light">
     <li className="border-t-2 border-b-2">
-    <Link className="text-gray-500" href="#second-section">Starters</Link>
+    <Link className="text-gray-500" href="#starters">Starters</Link>
     </li>
     <li>
-    <Link className="text-gray-500" href="#third-section" scroll={true}>From Sea</Link>
+    <Link className="text-gray-500" href="#sea" scroll={true}>From Sea</Link>
     </li>
     <li>
-    <Link className="text-gray-500" href="">From Land</Link>
+    <Link className="text-gray-500" href="#land">From Land</Link>
     </li>
     <li>
     <Link className="text-gray-500" href="">Desserts</Link>
