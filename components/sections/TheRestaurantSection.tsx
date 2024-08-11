@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import imgURL from "../../public/assets/photos/image_1.jpg";
 
@@ -17,7 +16,7 @@ const TheRestaurantSection = () => {
           </p>
           <p className="font-medium text-start">
             We are delighted to announce that our doors are now officially open!
-            Introducing The Elaborée, the meticulously chosen name for our brand
+            Introducing The Elaboree, the meticulously chosen name for our brand
             new restaurant, where we aim to provide you with a truly emotional
             dining experience through every delectable dish. You can locate us
             at 17 Main Avenue, situated in one of the most renowned areas of the
