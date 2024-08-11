@@ -1,23 +1,34 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import Image from 'next/image';
-import imgURL from '../../public/assets/photos/image_1.jpg';
+import React from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import imgURL from "../../public/assets/photos/image_1.jpg";
 
 const TheRestaurantSection = () => {
   return (
     <section className="h-full bg-white">
-    <div className="grid grid-cols-1 md:grid-cols-2">
-    <div className="flex w-full md:w-3/4 flex-col gap-5 p-20 font-montserrat">
-    <h2 className="font-bold text-3xl">THE RESTAURANT</h2>
-    <p className="font-semibold">Fine dining at your disposal every day</p>
-    <p className="font-medium text-start">We are delighted to announce that our doors are now officially open! Introducing The Elaborée, the meticulously chosen name for our brand new restaurant, where we aim to provide you with a truly emotional dining experience through every delectable dish. You can locate us at 17 Main Avenue, situated in one of the most renowned areas of the city, just a short distance away from the bustling city center.</p>
-    <button className="p-2 border border-[#BCAF87] w-full text-[12px]">MEET THE RESTAURANT</button>
-    </div>
-    <div>
-    <div className="hidden md:block w-3/4 h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="flex w-full md:w-3/4 flex-col gap-5 p-20 font-montserrat">
+          <h2 className="font-bold text-3xl">THE RESTAURANT</h2>
+          <p className="font-semibold">
+            Fine dining at your disposal every day
+          </p>
+          <p className="font-medium text-start">
+            We are delighted to announce that our doors are now officially open!
+            Introducing The Elaborée, the meticulously chosen name for our brand
+            new restaurant, where we aim to provide you with a truly emotional
+            dining experience through every delectable dish. You can locate us
+            at 17 Main Avenue, situated in one of the most renowned areas of the
+            city, just a short distance away from the bustling city center.
+          </p>
+          <button className="p-2 border border-[#BCAF87] w-full text-[12px]">
+            MEET THE RESTAURANT
+          </button>
+        </div>
+        <div>
+          <div className="hidden md:block w-3/4 h-full">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -31,10 +42,11 @@ const TheRestaurantSection = () => {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-          </div></div>
-    </div>
+          </div>
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default TheRestaurantSection
+export default TheRestaurantSection;
