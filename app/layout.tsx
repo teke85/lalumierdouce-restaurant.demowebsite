@@ -11,7 +11,6 @@ import {
   Ibarra_Real_Nova,
   Aboreto,
 } from 'next/font/google';
-import localFont from 'next/font/local';
 import './globals.css';
 
 const poppins = Poppins({

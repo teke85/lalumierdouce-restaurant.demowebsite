@@ -36,7 +36,7 @@ const HeroSection = () => {
       {/* Content */}
       <section className="flex py-10 h-full items-center justify-center">
         <div className="grid grid-cols-1 md:w-3/4 md:grid-cols-2 items-center place-items-center w-full">
-          <div className="hidden md:block bg- w-3/4 h-full">
+          <div className="hidden md:block w-3/4 h-full">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
