@@ -15,7 +15,7 @@ export default function RestaurantSection() {
           La Lumiere Dounce Restaurant is a place where culinary art meets elegance.
         </p>
         <p className="text-xl">
-          Since our inception, we've been committed to providing an unparalleled dining experience.
+          Since our inception, we have been committed to providing an unparalleled dining experience.
         </p>
       </motion.div>
     </section>
