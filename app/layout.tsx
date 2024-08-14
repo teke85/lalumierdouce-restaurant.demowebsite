@@ -10,6 +10,8 @@ import {
   Ubuntu,
   Ibarra_Real_Nova,
   Aboreto,
+  Antonio,
+  Jost,
 } from 'next/font/google';
 import './globals.css';
 
@@ -17,6 +19,20 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '700', '800'],
   variable: '--font-poppins',
+  display: 'swap',
+});
+
+const antonio = Antonio({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '700'],
+  variable: '--font-antonio',
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '700'],
+  variable: '--font-jost',
   display: 'swap',
 });
 
@@ -68,7 +84,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${aboreto.variable} ${ibarra.variable} ${ubuntu.variable} ${poppins.variable} ${lora.variable}`}>
+      <body className={`${montserrat.variable} ${jost.variable} ${antonio.variable} ${aboreto.variable} ${ibarra.variable} ${ubuntu.variable} ${poppins.variable} ${lora.variable}`}>
         <main>
         <Header />
         {children}

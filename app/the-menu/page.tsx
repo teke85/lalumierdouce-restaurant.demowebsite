@@ -4,6 +4,7 @@ import Image from 'next/image';
 import imgURL from '../../public/assets/photos/image_8.jpg';
 import NavMenu from '@/components/NavMenu';
 
+
 export default function TheMenu() {
   return (
     <>

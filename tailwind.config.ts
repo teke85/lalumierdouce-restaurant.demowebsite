@@ -23,6 +23,8 @@ const config: Config = {
         ibarra: ['var(--font-ibarra)'],
         aboreto: ['var(--font-aboreto)'],
         Roashe: ['var(--font-Roashe'],
+        antonio: ['var(--font-antonio'],
+        jost: ['var(--font-jost'],
       },
 
     },

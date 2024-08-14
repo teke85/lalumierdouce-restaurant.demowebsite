@@ -10,16 +10,16 @@ const NavMenu = () => {
     <Link className="text-gray-500" href="#starters">Starters</Link>
     </li>
     <li>
-    <Link className="text-gray-500" href="#sea" scroll={true}>From Sea</Link>
+    <Link className="text-gray-500" href="#seaFood" scroll={true}>From Sea</Link>
     </li>
     <li>
-    <Link className="text-gray-500" href="#land">From Land</Link>
+    <Link className="text-gray-500" href="#landFood">From Land</Link>
     </li>
     <li>
-    <Link className="text-gray-500" href="">Desserts</Link>
+    <Link className="text-gray-500" href="#dessert">Desserts</Link>
     </li>
     <li>
-    <Link className="text-gray-500" href="">Drinks</Link>
+    <Link className="text-gray-500" href="#drinks">Drinks</Link>
     </li>
     </ul>
     </nav>
