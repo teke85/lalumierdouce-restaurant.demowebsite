@@ -75,10 +75,9 @@ export default function RestaurantSection() {
               Born into a family of esteemed chefs, Jean-Luc inherited a deep
               appreciation for fine cuisine and an unwavering commitment to
               perfection. From an early age, he spent countless hours at his
-              grandparents' bustling boulangerie, marveling at the artistry and
+              grandparents bustling boulangerie, marveling at the artistry and
               craftsmanship that went into creating each delicate pastry.
             </p>
-
             <p>
               Driven by an insatiable curiosity and an innate desire to push the
               boundaries of flavor, Jean-Luc embarked on a voyage of culinary
