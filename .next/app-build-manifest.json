@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/the-menu/page": [
+    "/the-restaurant/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/the-menu/page.js"
+      "static/chunks/app/the-restaurant/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,10 +11,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/the-restaurant/page": [
+    "/the-menu/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/the-restaurant/page.js"
+      "static/chunks/app/the-menu/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ]
   }
 }

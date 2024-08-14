@@ -12,8 +12,8 @@ export default function TheMenu() {
       <div className="grid grid-cols-1 md:grid-cols-2">
       {/* Text Container */}
         <div className="flex justify-start text-white p-8">
-          <h1 className="text-4xl font-aboreto font-bold text-white text-center">
-            THE LA LUMIER DOUCE RESTAURANT<br /> MENU
+          <h1 className="text-4xl font-poppins font-bold text-white text-start">
+            THE LA LUMIER DOUCE <span className="text-[#BCAF87]">RESTAURANT</span><br /> MENU
           </h1>
         </div>
         {/* Image Container */}

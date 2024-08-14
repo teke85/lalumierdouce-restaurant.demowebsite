@@ -4,6 +4,17 @@ import logoURL from "../public/assets/logos/Main_Logo.png";
 import chefURL from "../public/assets/photos/chef.jpg";
 
 import Image from "next/image";
+import Link from "next/link";
+
+// Array of image URLs
+const imageUrls = [
+  "/assets/photos/resturant_image_1.jpg",
+  "/assets/photos/resturant_image_2.jpg",
+  "/assets/photos/resturant_image_3.jpg",
+  "/assets/photos/resturant_image_4.jpg",
+  "/assets/photos/resturant_image_5.jpg",
+  "/assets/photos/resturant_image_7.jpg",
+];
 
 export default function RestaurantSection() {
   return (
@@ -27,7 +38,7 @@ export default function RestaurantSection() {
           transition={{ duration: 1 }}
           className="relative flex flex-col items-center justify-center h-full text-white text-center"
         >
-          <div className="relative w-1/2 h-auto">
+          {/* <div className="relative w-1/2 h-auto">
             <Image
               src={logoURL}
               alt="Logo"
@@ -35,12 +46,12 @@ export default function RestaurantSection() {
               width={300} // Adjust width and height as needed
               height={150} // Adjust width and height as needed
             />
-          </div>
+          </div> */}
           {/* Uncomment to include text */}
-          {/* <h2 className="text-5xl font-ibarra font-bold mb-6">Our Story</h2>
-        <p className="text-4xl font-poppins font-bold mb-6">
-          La Lumiere Dounce Restaurant
-        </p> */}
+          <h2 className="text-5xl font-ibarra font-bold mb-6">Our Story</h2>
+          <p className="text-4xl font-aboreto font-bold mb-6">
+            La Lumiere Dounce <span className="text-[#BCAF87]">Restaurant</span>
+          </p>
         </motion.div>
       </section>
       <section className="bg-[#272F3C] py-10">
@@ -48,7 +59,7 @@ export default function RestaurantSection() {
           <div className="flex text-5xl justify-center md:justify-end">
             <h3 className="">
               A HISTORY
-              <br /> STARTED EARLY
+              <br /> STARTED <span className="text-[#BCAF87]">EARLY</span>
             </h3>
           </div>
           <div className="flex flex-col font-montserrat px-10 w-full md:w-3/4 font-semibold gap-5">
@@ -97,7 +108,10 @@ export default function RestaurantSection() {
       <section className="bg-[#272F3C] py-10">
         <div className="container text-white gap-10 grid grid-cols-1 md:grid-cols-2">
           <div className="flex text-5xl justify-center md:justify-end">
-            <h3 className="">WE COOK ART<br /> WITH HEART</h3>
+            <h3 className="">
+              <span className="text-[#BCAF87]">WE COOK</span> ART
+              <br /> WITH HEART
+            </h3>
           </div>
           <div className="flex flex-col font-montserrat px-10 w-full md:w-3/4 font-semibold gap-5">
             <p>
@@ -125,6 +139,48 @@ export default function RestaurantSection() {
               artistry that unfolded before their eyes, as each plate was
               meticulously assembled like a work of edible art.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#272F3C] py-10">
+        <div className="text-content w-2/4 items-center mx-auto justify-center flex flex-col text-gray-700 font-montserrat space-y-10">
+          <motion.div
+            className="grid grid-cols-1 gap-8 md:grid-cols-2"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              visible: { transition: { staggerChildren: 0.3 } },
+              hidden: { transition: { staggerChildren: 0.3 } },
+            }}
+          >
+            {imageUrls.map((url, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeIn" }}
+                className="w-full h-full"
+              >
+                <Image
+                  src={url}
+                  alt={`Image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  width={500} // Adjust the width and height as needed
+                  height={300}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+      <section className="bg-[#272F3C] py-10 flex flex-col font-montserrat items-center gap-5 w-full h-[50vh]">
+        <div className="container">
+          <hr className="mx-auto w-[80%] pt-5" />
+          <div className="flex flex-col items-center font-medium text-white gap-5 text-content">
+            <p>10725 NE Ocean Blvd #LOT 138 Jensen Beach, Florida</p>
+            <p>Closed on Mondays</p>
+            <p>Open Tuesday to Sunday: 12 PM to 3 PM and 7 PM to 11 PM</p>
+            <hr className="mx-auto w-[50%] pb-5" />
           </div>
         </div>
       </section>
