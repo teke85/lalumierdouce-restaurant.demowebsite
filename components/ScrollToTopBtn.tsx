@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ScrollToTopBtn = () => {
   return (
-    <div>ScrollToTopBtn</div>
+    <div className="z-50 text-white bg-[#1D2430]">ScrollToTopBtn</div>
   )
 }
 

@@ -14,6 +14,7 @@ import {
   Jost,
 } from 'next/font/google';
 import './globals.css';
+import ScrollToTopBtn from "@/components/ScrollToTopBtn";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -88,6 +89,7 @@ export default function RootLayout({
         <main>
         <Header />
         {children}
+        <ScrollToTopBtn />
         <Footer />
         </main>
       </body>

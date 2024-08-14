@@ -33,7 +33,7 @@ const TheRestaurantSection = () => {
               animate={{ opacity: 1, scale: 1 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.5, ease: "easeIn" }}
-              className="w-full h-full"
+              className="w-full h-full p-5"
             >
               <Image
                 src={imgURL}

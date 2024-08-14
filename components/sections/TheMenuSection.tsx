@@ -21,7 +21,7 @@ const TheMenu = () => {
       <div className="flex items-center p-10">
         <hr className="w-1/2" />
         <div className="flex w-1/2 justify-center">
-          <h2 className="w-1/2 text-4xl font-montserrat font-semibold">THE MENU</h2>
+          <h2 className="w-1/2 text-base md:text-4xl font-montserrat font-semibold">THE MENU</h2>
         </div>
         <hr className="w-1/2" />
       </div>
