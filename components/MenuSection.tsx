@@ -26,7 +26,7 @@ const menuItems: MenuItems = {
       name: "Seasonal entry of the month",
       description: "A seasonal entry to surprise you every month. :)",
       price: "ZMW 12.99",
-      imageUrl: '/assets/photos/image_9.jpg',
+      imageUrl: "/assets/photos/image_9.jpg",
     },
     {
       name: "Smoked eel, beetroot and wasabi",
@@ -49,7 +49,7 @@ const menuItems: MenuItems = {
       name: "Seafood Special",
       description: "A fresh selection of seasonal seafood.",
       price: "ZMW 19.99",
-      imageUrl: '/assets/photos/sea_food.jpg',
+      imageUrl: "/assets/photos/sea_food.jpg",
     },
     {
       name: "Grilled Shrimp Skewers",
@@ -72,7 +72,7 @@ const menuItems: MenuItems = {
       name: "Grilled Meat Burger",
       description: "Mixed greens, grilled chicken, cherry tomatoes, and lettuce.",
       price: "ZMW 10.99",
-      imageUrl: '/assets/photos/image_9.jpg',
+      imageUrl: "/assets/photos/image_9.jpg",
     },
     {
       name: "Roasted Chicken Breast",
@@ -95,7 +95,7 @@ const menuItems: MenuItems = {
       name: "Chocolate Lava Cake",
       description: "Rich chocolate cake with molten center.",
       price: "ZMW 8.99",
-      imageUrl: '/assets/photos/chocolate.jpg',
+      imageUrl: "/assets/photos/chocolate.jpg",
     },
     {
       name: "Classic Cheesecake",
@@ -118,7 +118,7 @@ const menuItems: MenuItems = {
       name: "Fresh Lemonade",
       description: "Crisp and refreshing lemonade.",
       price: "ZMW 4.99",
-      imageUrl: '/assets/photos/drinks.jpg',
+      imageUrl: "/assets/photos/drinks.jpg",
     },
     {
       name: "Iced Coffee",
@@ -170,18 +170,23 @@ const MenuSection = () => {
             </motion.div>
           ))}
         </motion.div>
-        
-        <div className="w-full md:w-2/5 h-[50vh] relative">
+
+        <motion.div
+          className="w-full md:w-2/5 h-[50vh] relative"
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           {menuItems[categoryName].filter(item => item.imageUrl).map((item, index) => (
             <Image
               key={index}
               src={item.imageUrl!}
               alt={item.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-lg"
               fill
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
