@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 export default function ReservationForm() {
-  const [formData, setFormData] = useState({ name: '', date: '', time: '', guests: 1 });
+  const [formData, setFormData] = useState({ name: '', date: '', time: '', guests: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,32 +22,28 @@ export default function ReservationForm() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       onSubmit={handleSubmit}
-      className="flex flex-col gap-6 bg-white p-8 rounded-lg shadow-lg"
+      className="flex flex-col gap-6 bg-white max-w-5xl p-8 shadow-lg"
     >
       <input
         type="text"
         name="name"
-        placeholder="Name"
+        placeholder="Your Name"
         value={formData.name}
         onChange={handleChange}
         className="p-4 border rounded"
       />
       <input
-        type="date"
-        name="date"
-        value={formData.date}
+        type="text"
+        name="name"
+        placeholder="Your Email"
+        value={formData.name}
         onChange={handleChange}
         className="p-4 border rounded"
       />
-      <input
-        type="time"
-        name="time"
-        value={formData.time}
-        onChange={handleChange}
-        className="p-4 border rounded"
-      />
+      
       <input
         type="number"
+        placeholder="Please Indicate when and how many people you want to make the reservation for?"
         name="guests"
         value={formData.guests}
         onChange={handleChange}
@@ -56,9 +52,9 @@ export default function ReservationForm() {
       />
       <button
         type="submit"
-        className="p-4 bg-black text-white rounded-lg"
+        className="p-4 bg-[#272F3C] w-3/6 text-white mx-auto font-medium font-montserrat rounded-lg"
       >
-        Make a Reservation
+        SEND MESSAGE
       </button>
     </motion.form>
   );

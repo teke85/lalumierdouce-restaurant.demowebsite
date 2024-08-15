@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/the-restaurant/page": [
+    "/reservations/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/the-restaurant/page.js"
+      "static/chunks/app/reservations/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,20 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/the-menu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/the-menu/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/reservations/page": [
+    "/the-restaurant/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/reservations/page.js"
+      "static/chunks/app/the-restaurant/page.js"
+    ],
+    "/the-menu/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/the-menu/page.js"
     ]
   }
 }
