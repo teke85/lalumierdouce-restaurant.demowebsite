@@ -11,10 +11,10 @@ const TheRestaurantSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex w-full md:w-3/4 flex-col gap-5 p-20 font-montserrat">
           <h2 className="font-bold text-3xl">THE RESTAURANT</h2>
-          <p className="font-semibold">
+          <p className="font-semibold text-gray-700 font-montserrat">
             Fine dining at your disposal every day
           </p>
-          <p className="font-medium text-start">
+          <p className="font-medium text-gray-700 font-montserrat text-start">
             We are delighted to announce that our doors are now officially open!
             Introducing The Elaboree, the meticulously chosen name for our brand
             new restaurant, where we aim to provide you with a truly emotional
