@@ -15,6 +15,7 @@ import {
 } from 'next/font/google';
 import './globals.css';
 import ScrollToTopBtn from "@/components/ScrollToTopBtn";
+import WelcomeModal from "@/components/WelomeModal";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -88,6 +89,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${jost.variable} ${antonio.variable} ${aboreto.variable} ${ibarra.variable} ${ubuntu.variable} ${poppins.variable} ${lora.variable}`}>
         <main>
         <Header />
+        <WelcomeModal />
         {children}
         <ScrollToTopBtn />
         <Footer />
