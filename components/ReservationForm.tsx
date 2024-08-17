@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 export default function ReservationForm() {
-  const [formData, setFormData] = useState({ name: '', date: '', time: '', guests: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', date: '', time: '', guests: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -33,10 +33,10 @@ export default function ReservationForm() {
         className="p-4 border rounded"
       />
       <input
-        type="text"
-        name="name"
+        type="email"
+        name="email"
         placeholder="Your Email"
-        value={formData.name}
+        value={formData.email}
         onChange={handleChange}
         className="p-4 border rounded"
       />

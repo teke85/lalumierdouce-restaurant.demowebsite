@@ -15,7 +15,7 @@ import {
 } from 'next/font/google';
 import './globals.css';
 import ScrollToTopBtn from "@/components/ScrollToTopBtn";
-import WelcomeModal from "@/components/WelomeModal";
+import WelcomeModal from "@/components/WelcomeModal";
 
 const poppins = Poppins({
   subsets: ['latin'],
