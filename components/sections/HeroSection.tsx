@@ -60,7 +60,7 @@ const HeroSection = () => {
               variants={itemVariants}
               className="text-4xl uppercase md:text-5xl font-bold text-white mb-6"
             >
-              A True <span className="text-[#BCAF87]"><br />Gastronomic</span> Experience
+              A True <span className="text-[#BCAF87] font-aboreto italic"><br />Gastronomic</span> Experience
             </motion.h1>
             <motion.p
               variants={itemVariants}
