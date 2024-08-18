@@ -12,6 +12,7 @@ const Footer = () => {
         <Link href="#">Instagram</Link>
         <Link href="#">Twitter</Link>
       </div>
+      <div><Link href="https://www.tekmucreations.tech"><p className="font-montserrat font-[11px]">Site by Tekmu Creations</p></Link></div>
     </footer>
   )
 }

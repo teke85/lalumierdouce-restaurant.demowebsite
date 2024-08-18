@@ -50,8 +50,7 @@ export default function RestaurantSection() {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="text-4xl font-aboreto font-bold mb-6"
           >
-            La Lumiere Dounce{" "}
-            <span className="text-[#BCAF87]">Restaurant</span>
+            La Lumiere Dounce <span className="text-[#BCAF87]">Restaurant</span>
           </motion.p>
         </motion.div>
       </section>
@@ -103,25 +102,24 @@ export default function RestaurantSection() {
         </div>
       </section>
 
-      <section className="relative h-screen">
-  <motion.div
-    className="absolute inset-0 -z-10 h-full"
-    initial={{ scale: 1.2 }}
-    whileInView={{ scale: 1 }}
-    transition={{ duration: 1.5, ease: "easeOut" }}
-  >
-    <Image
-      src={chefURL}
-      alt="Background Image"
-      className="w-full h-full object-cover"
-      fill
-      quality={80}
-    />
-    {/* Dark Overlay */}
-    <div className="absolute inset-0 bg-black opacity-30"></div>
-  </motion.div>
-</section>
-
+      <section className="relative h-screen overflow-hidden">
+        <motion.div
+          className="absolute inset-0 -z-10 h-full"
+          initial={{ scale: 1.1 }} // Reduced scaling to prevent overflow
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
+          <Image
+            src={chefURL}
+            alt="Background Image"
+            className="w-full h-full object-cover"
+            fill
+            quality={80}
+          />
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black opacity-30"></div>
+        </motion.div>
+      </section>
 
       <section className="bg-[#272F3C] py-10">
         <div className="container text-white gap-10 grid grid-cols-1 md:grid-cols-2">
