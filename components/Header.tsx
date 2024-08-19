@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
         </motion.div>
         <nav>
-          <ul className="md:flex hidden font-montserrat space-x-8 text-white">
+          <ul className="md:flex hidden font-montserrat text-[15px] space-x-8 text-white">
             <li>
               <Link href="/the-restaurant">The Restaurant</Link>
             </li>
@@ -30,10 +30,10 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="border border-[#BCAF87] font-semibold hover:bg-[#BCAF87] transform duration-700 p-4"
+                className="border border-[#BCAF87] font-normal hover:bg-[#BCAF87] transform duration-700 p-4"
                 href="/reservations"
               >
-                Reservation
+                Make A Reservation
               </Link>
             </li>
           </ul>

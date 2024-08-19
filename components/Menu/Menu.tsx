@@ -6,15 +6,23 @@ import './menu.css';
 
 const menuLinks = [
     { path: "/", label: "Home"},
-    { path: "/", label: "Work"},
-    { path: "/", label: "About"},
-    { path: "/", label: "Contact"},
-    { path: "/", label: "Lab"},
+    { path: "/restaurant", label: "The Restaurant"},
+    { path: "/menu", label: "The Menu"},
+    { path: "/reservation", label: "Reservation"},
+    { path: "/contact", label: "Contact"},
+    
 ]
 
 const Menu = () => {
+const container = useRef();
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+}
+
   return (
-    <section className="z-[999px] hidden bg-red-700">Menu</section>
+    <section className="z-[999px] hidden bg-red-700"><div className="container">Menu</div></section>
   )
 }
 
