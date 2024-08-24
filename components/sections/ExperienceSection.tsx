@@ -1,4 +1,3 @@
-// components/ExperiencesSection.jsx
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
@@ -7,28 +6,30 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ExperiencesSection() {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const element = sectionRef.current;
 
-    gsap.fromTo(
-      element.querySelectorAll(".experience-item"),
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power3.out",
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: element,
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-        },
-      }
-    );
+    if (element) {
+      gsap.fromTo(
+        element.querySelectorAll(".experience-item"),
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true,
+          },
+        }
+      );
+    }
   }, []);
 
   return (

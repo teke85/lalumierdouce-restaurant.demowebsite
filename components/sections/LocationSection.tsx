@@ -1,4 +1,3 @@
-// components/LocationSection.jsx
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
@@ -9,28 +8,30 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function LocationSection() {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useGSAP(() => {
     const element = sectionRef.current;
 
-    gsap.fromTo(
-      element.querySelectorAll(".location-item"),
-      { opacity: 0, x: -50 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        ease: "power3.out",
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: element,
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-        },
-      }
-    );
+    if (element) {
+      gsap.fromTo(
+        element.querySelectorAll(".location-item"),
+        { opacity: 0, x: -50 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.5,
+          ease: "power3.out",
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true,
+          },
+        }
+      );
+    }
   }, []);
 
   return (
@@ -50,7 +51,7 @@ export default function LocationSection() {
           <div className="location-item flex flex-col justify-center">
             <h3 className="text-2xl font-bold font-aboreto italic mb-4">La Lumiere Restaurant</h3>
             <p className="text-gray-700 font-poppins mb-4">
-              Located in the heart of Valpolicella, La Lumiere douce Restaurant is a
+              Located in the heart of Valpolicella, La Lumiere Douce Restaurant is a
               historical residence offering a unique experience in the
               enchanting wine region.
             </p>
