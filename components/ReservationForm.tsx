@@ -52,7 +52,7 @@ export default function ReservationForm() {
       />
       <button
         type="submit"
-        className="p-4 bg-[#272F3C] w-3/6 text-white mx-auto font-medium font-montserrat rounded-lg"
+        className="p-4 bg-[#272F3C] w-4/4 md:w-3/6 text-white mx-auto font-medium font-montserrat rounded-lg"
       >
         SEND MESSAGE
       </button>

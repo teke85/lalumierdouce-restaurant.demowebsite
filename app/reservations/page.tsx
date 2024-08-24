@@ -5,9 +5,9 @@ export default function Reservations() {
   return (
     <>
       <section className="p-12 bg-[#272f3c]">
-        <div className="flex flex-col font-montserrat text-2xl font-medium gap-5 text-white h-[30vh] mx-auto">
+        <div className="flex flex-col font-montserrat text-2xl font-medium gap-5 text-white h-full md:h-[30vh] mx-auto">
           <p>
-            Make a reservation{" "}
+            Make a reservation
             <span className="text-[#BCAF87]">with us and</span> enjoy a unique
             experience.
           </p>
