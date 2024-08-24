@@ -24,7 +24,7 @@ export default function Reservations() {
           <ReservationForm />
         </div>
       </section>
-      <section className="bg-[#272F3C] py-10 flex flex-col font-montserrat items-center gap-5 w-full h-[50vh]">
+      <section className="bg-[#272F3C] py-10 px-10 flex flex-col font-montserrat items-center gap-5 w-full h-full md:h-[50vh]">
         <div className="container">
           <hr className="mx-auto w-[80%] pt-5" />
           <div className="flex flex-col items-center font-medium text-white gap-5 text-content">

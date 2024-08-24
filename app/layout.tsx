@@ -16,7 +16,6 @@ import {
 import './globals.css';
 import ScrollToTopBtn from "@/components/ScrollToTopBtn";
 import WelcomeModal from "@/components/WelcomeModal";
-import Menu from "@/components/Menu/Menu";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -91,7 +90,6 @@ export default function RootLayout({
         <main>
         <Header />
         <WelcomeModal />
-        <Menu />
         {children}
         <ScrollToTopBtn />
         <Footer />

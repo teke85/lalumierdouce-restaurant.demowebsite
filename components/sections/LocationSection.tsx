@@ -36,7 +36,7 @@ export default function LocationSection() {
   return (
     <section ref={sectionRef} className="bg-white py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold font-montserrat text-center mb-12">Location</h2>
+        <h2 className="text-4xl font-bold font-aboreto text-center mb-12">Location</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="location-item relative overflow-hidden shadow-lg">
             <Image
@@ -48,13 +48,13 @@ export default function LocationSection() {
             />
           </div>
           <div className="location-item flex flex-col justify-center">
-            <h3 className="text-2xl font-bold font-montserrat mb-4">La Lumiere Restaurant</h3>
+            <h3 className="text-2xl font-bold font-aboreto italic mb-4">La Lumiere Restaurant</h3>
             <p className="text-gray-700 font-poppins mb-4">
               Located in the heart of Valpolicella, La Lumiere douce Restaurant is a
               historical residence offering a unique experience in the
               enchanting wine region.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 font-poppins">
               Address: Via della Torre, 25, 37022 Fumane VR, Italy
             </p>
             <Link
