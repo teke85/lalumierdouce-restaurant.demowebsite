@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-// components/ReservationForm.tsx
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Toaster, toast } from 'react-hot-toast';
 
 export default function ReservationForm() {
   const [formData, setFormData] = useState({
@@ -18,9 +18,48 @@ export default function ReservationForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Reservation submitted:', formData);
+
+    const { name, email, organization, date, time, guests } = formData;
+
+    if (!name || !email || !date || !time || !guests) {
+      toast.error('Please fill in the required fields: Name, email, date, time and guests.');
+      return;
+    }
+
+    const emailTemplate = `
+      Hi ${name || organization || 'there'},
+      
+      Thank you for your reservation request. Here are the details:
+      - Name: ${name}
+      - Organization: ${organization || 'N/A'}
+      - Number of Guests: ${guests}
+      - Date: ${date}
+      - Time: ${time}
+      
+      We will get back to you shortly to confirm your reservation.
+    `;
+
+    try {
+    await fetch('/api/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        organization,
+        guests,
+        date,
+        time,
+      }),
+    });
+      toast.success('Reservation submitted successfully! Kindly check your email to view your reservation details!');
+    } catch (error) {
+      toast.error('Failed to submit reservation.');
+    }
   };
 
   return (
@@ -88,6 +127,7 @@ export default function ReservationForm() {
           SEND MESSAGE
         </button>
       </div>
+      <Toaster position="top-right" />
     </motion.form>
   );
 }

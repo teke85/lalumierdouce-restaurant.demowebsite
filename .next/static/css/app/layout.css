@@ -1429,12 +1429,6 @@ video {
 .z-50 {
   z-index: 50;
 }
-.z-\[50\] {
-  z-index: 50;
-}
-.z-\[9900px\] {
-  z-index: 9900px;
-}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1458,12 +1452,6 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
-}
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
 .flex {
   display: flex;
 }
@@ -1473,20 +1461,17 @@ video {
 .hidden {
   display: none;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-20 {
   height: 5rem;
 }
 .h-6 {
   height: 1.5rem;
 }
-.h-\[100vh\] {
-  height: 100vh;
-}
 .h-\[300px\] {
   height: 300px;
-}
-.h-\[30vh\] {
-  height: 30vh;
 }
 .h-\[50vh\] {
   height: 50vh;
@@ -1512,14 +1497,8 @@ video {
 .w-3\/4 {
   width: 75%;
 }
-.w-3\/6 {
-  width: 50%;
-}
 .w-6 {
   width: 1.5rem;
-}
-.w-\[100vw\] {
-  width: 100vw;
 }
 .w-\[20vw\] {
   width: 20vw;
@@ -1533,9 +1512,6 @@ video {
 .w-full {
   width: 100%;
 }
-.w-1\/4 {
-  width: 25%;
-}
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1544,12 +1520,6 @@ video {
 }
 .max-w-xl {
   max-width: 36rem;
-}
-.max-w-2xl {
-  max-width: 42rem;
-}
-.flex-1 {
-  flex: 1 1 0%;
 }
 .flex-grow {
   flex-grow: 1;
@@ -1582,17 +1552,11 @@ video {
 .place-items-center {
   place-items: center;
 }
-.items-end {
-  align-items: flex-end;
-}
 .items-center {
   align-items: center;
 }
 .justify-start {
   justify-content: flex-start;
-}
-.justify-end {
-  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -1629,11 +1593,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1683,10 +1642,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(39 47 60 / var(--tw-bg-opacity));
 }
-.bg-\[\#272c1a\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 44 26 / var(--tw-bg-opacity));
-}
 .bg-\[\#272f3c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(39 47 60 / var(--tw-bg-opacity));
@@ -1713,13 +1668,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-.bg-\[\] {
-  background-color: ;
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -1753,9 +1701,6 @@ video {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-9 {
-  padding: 2.25rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -1797,10 +1742,6 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1822,6 +1763,9 @@ video {
 .font-ibarra {
   font-family: var(--font-ibarra);
 }
+.font-lora {
+  font-family: var(--font-lora);
+}
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -1830,9 +1774,6 @@ video {
 }
 .font-poppins {
   font-family: var(--font-poppins);
-}
-.font-lora {
-  font-family: var(--font-lora);
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1865,6 +1806,9 @@ video {
 .text-\[16px\] {
   font-size: 16px;
 }
+.text-\[17px\] {
+  font-size: 17px;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1876,9 +1820,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-\[17px\] {
-  font-size: 17px;
 }
 .font-bold {
   font-weight: 700;
@@ -2011,12 +1952,16 @@ body {
     display: none;
   }
 
+  .md\:h-\[30vh\] {
+    height: 30vh;
+  }
+
   .md\:h-\[50vh\] {
     height: 50vh;
   }
 
-  .md\:h-\[30vh\] {
-    height: 30vh;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-2\/5 {
@@ -2029,14 +1974,6 @@ body {
 
   .md\:w-\[15vw\] {
     width: 15vw;
-  }
-
-  .md\:w-3\/6 {
-    width: 50%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:grid-cols-2 {
@@ -2055,12 +1992,12 @@ body {
     justify-content: flex-end;
   }
 
-  .md\:p-12 {
-    padding: 3rem;
-  }
-
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:text-2xl {

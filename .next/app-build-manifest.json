@@ -11,16 +11,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/the-menu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/the-menu/page.js"
-    ],
-    "/the-restaurant/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/the-restaurant/page.js"
-    ],
     "/reservations/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
