@@ -9,9 +9,10 @@ export default function ReservationForm() {
     name: '',
     email: '',
     organization: '',
-    date: '',
-    time: '',
     guests: '',
+    checkInDate: '',
+    checkOutDate: '',
+    time: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -21,44 +22,36 @@ export default function ReservationForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { name, email, organization, date, time, guests } = formData;
+    const { name, email, organization, guests, checkInDate, checkOutDate, time } = formData;
 
-    if (!name || !email || !date || !time || !guests) {
-      toast.error('Please fill in the required fields: Name, email, date, time and guests.');
+    if (!name || !email || !checkInDate || !checkOutDate || !guests || !time) {
+      toast.error('Please fill in all the required fields.');
       return;
     }
 
-    const emailTemplate = `
-      Hi ${name || organization || 'there'},
-      
-      Thank you for your reservation request. Here are the details:
-      - Name: ${name}
-      - Organization: ${organization || 'N/A'}
-      - Number of Guests: ${guests}
-      - Date: ${date}
-      - Time: ${time}
-      
-      We will get back to you shortly to confirm your reservation.
-    `;
-
     try {
-    await fetch('/api/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        organization,
-        guests,
-        date,
-        time,
-      }),
-    });
-      toast.success('Reservation submitted successfully! Kindly check your email to view your reservation details!');
+      await fetch('/api/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          organization,
+          guests,
+          checkInDate,
+          checkOutDate,
+          time,
+        }),
+      });
+      toast.success('Reservation submitted successfully! Kindly check your email to view your reservation details!', {
+        duration: 5000,
+      });
     } catch (error) {
-      toast.error('Failed to submit reservation.');
+      toast.error('Failed to submit reservation.', {
+        duration: 5000,
+      });
     }
   };
 
@@ -105,9 +98,17 @@ export default function ReservationForm() {
       />
       <input
         type="date"
-        name="date"
-        placeholder="Reservation Date"
-        value={formData.date}
+        name="checkInDate"
+        placeholder="Check-In Date"
+        value={formData.checkInDate}
+        onChange={handleChange}
+        className="p-4 border rounded"
+      />
+      <input
+        type="date"
+        name="checkOutDate"
+        placeholder="Check-Out Date"
+        value={formData.checkOutDate}
         onChange={handleChange}
         className="p-4 border rounded"
       />

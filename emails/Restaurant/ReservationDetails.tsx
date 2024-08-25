@@ -19,7 +19,8 @@ type DetailsProps = {
   email: string;
   organization?: string;
   guests: string;
-  date: string;
+  checkInDate: string;
+  checkOutDate: string;
   time: string;
 };
 
@@ -28,7 +29,8 @@ export default function Details({
   email,
   organization = 'N/A',
   guests,
-  date,
+  checkInDate,
+  checkOutDate,
   time,
 }: DetailsProps) {
   return (
@@ -52,7 +54,8 @@ export default function Details({
                 <br />• <strong>Email:</strong> {email}
                 <br />• <strong>Organization:</strong> {organization}
                 <br />• <strong>Number of Guests:</strong> {guests}
-                <br />• <strong>Date:</strong> {date}
+                <br />• <strong>Check-In Date:</strong> {checkInDate}
+                <br />• <strong>Check-Out Date:</strong> {checkOutDate}
                 <br />• <strong>Time:</strong> {time}
               </Text>
               <Hr />
