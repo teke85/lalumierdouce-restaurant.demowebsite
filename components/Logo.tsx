@@ -7,9 +7,9 @@ const Logo = () => {
       <Image
         className="relative rounded-full"
         src="/assets/logos/lalumiere_logo.png"
+        objectFit='cover'
         alt="logo"
-        width={700}
-        height={300}
+        fill
         priority
       />
     </div>
