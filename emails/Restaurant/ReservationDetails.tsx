@@ -64,7 +64,7 @@ export default function Details({
                 unforgettable experience. If you have any special requests or
                 need further assistance, please don't hesitate to contact us.
               </Text>
-              <Button href="https://www.langanisafari.com/reservations">
+              <Button href="https://lalumierdouce-restaurant-demowebsite.vercel.app/">
                 Manage your Reservation
               </Button>
               <Hr />
@@ -73,45 +73,33 @@ export default function Details({
                 reservation, please contact us at:
                 <br />• Email:
                 <Link href="mailto:info@tekmucreations.com">
-                  info@tekmucreations.com
+                   <Link href="mailto:mutau85@gmail.com">info.lalumierdouce-restaurant.com</Link>
                 </Link>
-                <br />• Phone: +260 968 555518
+                <br />• <strong>Phone:</strong> +956 677 494 340
               </Text>
               <Hr />
               <Section>
                 <Text>
-                  <strong>Isiteketo Mutau</strong>
-                  <br />
-                  Full Stack Web Developer
-                  <br />
-                  Tekmu Creations
+                  <strong>Management</strong>
+                  <br />                 
                 </Text>
                 <Text>
                   <br />
                   <strong>Contact Information:</strong>
                   <br />
-                  <strong>Phone:</strong> +260 968 555518
+                  <strong>Phone:</strong> +956 677 494 340
                   <br />
                   <strong>Email:</strong>
-                  <Link href="mailto:mutau85@gmail.com">mutau85@gmail.com</Link>
+                  <Link href="mailto:mutau85@gmail.com">info.lalumierdouce-restaurant.com</Link>
                   <br />
-                  <strong>Address:</strong> 1/4721 Ngwee Road, Longacres, Lusaka
+                  <strong>Address:</strong> 10725 NE Ocean Blvd #LOT 138 Jensen Beach, Florida
                   <br />
                   <strong>Website:</strong>
-                  <Link href="https://www.tekmucreations.tech">
-                    www.tekmucreations.tech
+                  <Link href="https://lalumierdouce-restaurant-demowebsite.vercel.app/">
+                    www.lalumierdouce-restaurant.com
                   </Link>
                 </Text>
-                <Text>
-                  <br />
-                  <Link href="https://www.linkedin.com/in/isiteketomutau/">
-                    LinkedIn
-                  </Link>
-                  |
-                  <Link href="https://www.instagram.com/tk_mutau/">
-                    Instagram
-                  </Link>
-                </Text>
+                
               </Section>
             </Section>
           </Container>
