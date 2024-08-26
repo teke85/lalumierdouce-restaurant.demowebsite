@@ -1,7 +1,4 @@
 {
-  "/reservations/page": "app/reservations/page.js",
-  "/api/emails/route": "app/api/emails/route.js",
-  "/the-restaurant/page": "app/the-restaurant/page.js",
   "/page": "app/page.js",
-  "/the-menu/page": "app/the-menu/page.js"
+  "/reservations/page": "app/reservations/page.js"
 }

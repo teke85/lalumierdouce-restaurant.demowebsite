@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Toaster, toast } from 'react-hot-toast';
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function ReservationForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    organization: '',
-    guests: '',
-    checkInDate: '',
-    checkOutDate: '',
-    time: '',
+    name: "",
+    email: "",
+    organization: "",
+    guests: "",
+    checkInDate: "",
+    checkOutDate: "",
+    time: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,18 +22,26 @@ export default function ReservationForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { name, email, organization, guests, checkInDate, checkOutDate, time } = formData;
+    const {
+      name,
+      email,
+      organization,
+      guests,
+      checkInDate,
+      checkOutDate,
+      time,
+    } = formData;
 
     if (!name || !email || !checkInDate || !checkOutDate || !guests || !time) {
-      toast.error('Please fill in all the required fields.');
+      toast.error("Please fill in all the required fields.");
       return;
     }
 
     try {
-      await fetch('/api/emails', {
-        method: 'POST',
+      await fetch("/api/emails", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name,
@@ -45,11 +53,14 @@ export default function ReservationForm() {
           time,
         }),
       });
-      toast.success('Reservation submitted successfully! Kindly check your email to view your reservation details!', {
-        duration: 5000,
-      });
+      toast.success(
+        "Reservation submitted successfully! Kindly check your email to view your reservation details!",
+        {
+          duration: 5000,
+        }
+      );
     } catch (error) {
-      toast.error('Failed to submit reservation.', {
+      toast.error("Failed to submit reservation.", {
         duration: 5000,
       });
     }
@@ -96,30 +107,40 @@ export default function ReservationForm() {
         min="1"
         className="p-4 border rounded"
       />
-      <input
-        type="date"
-        name="checkInDate"
-        placeholder="Check-In Date"
-        value={formData.checkInDate}
-        onChange={handleChange}
-        className="p-4 border rounded"
-      />
-      <input
-        type="date"
-        name="checkOutDate"
-        placeholder="Check-Out Date"
-        value={formData.checkOutDate}
-        onChange={handleChange}
-        className="p-4 border rounded"
-      />
-      <input
-        type="time"
-        name="time"
-        placeholder="Reservation Time"
-        value={formData.time}
-        onChange={handleChange}
-        className="p-4 border rounded"
-      />
+      <div className="flex flex-col gap-2">
+      <span className="text-11px text-gray-400 px-4">Please Select a Check In Date</span>
+        <input
+          type="date"
+          name="checkInDate"
+          placeholder="Check-In Date"
+          value={formData.checkInDate}
+          onChange={handleChange}
+          className="p-4 border rounded"
+        />
+      </div>
+      <div className="flex flex-col gap-2">
+      <span className="text-11px text-gray-400 px-4">Please Select a Check Out Date</span>
+        <input
+          type="date"
+          name="checkOutDate"
+          placeholder="Check-Out Date"
+          value={formData.checkOutDate}
+          onChange={handleChange}
+          className="p-4 border rounded"
+        />
+      </div>
+      <div className="flex flex-col gap-2">
+      <span className="text-11px text-gray-400 px-4">Please Select Your Reservation Time</span>
+        <input
+          type="time"
+          name="time"
+          placeholder="Reservation Time"
+          value={formData.time}
+          onChange={handleChange}
+          className="p-4 border rounded"
+        />
+      </div>
+
       <div className="md:col-span-2 flex justify-center">
         <button
           type="submit"
