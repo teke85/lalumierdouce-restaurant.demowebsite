@@ -3,6 +3,7 @@ import {
   Button,
   Container,
   Head,
+  Font,
   Heading,
   Hr,
   Html,
@@ -11,8 +12,8 @@ import {
   Section,
   Text,
   Tailwind,
-} from '@react-email/components';
-import * as React from 'react';
+} from "@react-email/components";
+import * as React from "react";
 
 type DetailsProps = {
   firstName: string;
@@ -27,7 +28,7 @@ type DetailsProps = {
 export default function Details({
   firstName,
   email,
-  organization = 'N/A',
+  organization = "N/A",
   guests,
   checkInDate,
   checkOutDate,
@@ -36,16 +37,31 @@ export default function Details({
   return (
     <Html>
       <Head />
-      <Preview>Thank You for Your Reservation at LalumierDouce Restaurant</Preview>
+      <Font
+        fontFamily="Montserrat"
+        fallbackFontFamily="Verdana"
+        webFont={{
+          url: "https://fonts.gstatic.com/s/montserrat/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2",
+          format: "woff2",
+        }}
+        fontWeight={300}
+        fontStyle="normal"
+      />
+      <Preview>
+        Thank You for Your Reservation at LalumierDouce Restaurant
+      </Preview>
       <Tailwind>
         <Body>
           <Container>
             <Section>
-              <Heading>Your Reservation Details at LalumierDouce Restaurant</Heading>
+              <Heading>
+                Your Reservation Details at LalumierDouce Restaurant
+              </Heading>
               <Text>Dear {firstName},</Text>
               <Text>
                 Thank you for your reservation request. We are thrilled to have
-                you at Lalumier Douce Restaurant. Below are the details of your reservation:
+                you at Lalumier Douce Restaurant. Below are the details of your
+                reservation:
               </Text>
               <Hr />
               <Text>
@@ -64,42 +80,51 @@ export default function Details({
                 unforgettable experience. If you have any special requests or
                 need further assistance, please don't hesitate to contact us.
               </Text>
-              <Button href="https://lalumierdouce-restaurant-demowebsite.vercel.app/">
-                Manage your Reservation
+              <Button
+                className="leading-4"
+                href="https://lalumierdouce-restaurant-demowebsite.vercel.app/"
+                style={{
+                  color: "#ffffff",
+                  backgroundColor: "#000000",
+                  padding: "10px 20px",
+                }}
+              >
+                <Heading as="h5">Manage your Reservation</Heading>
               </Button>
               <Hr />
               <Text>
                 If you have any questions or need to make changes to your
                 reservation, please contact us at:
-                <br />• Email:
+                <br />
+                <strong>• Email: </strong>
                 <Link href="mailto:info@tekmucreations.com">
-                   <Link href="mailto:mutau85@gmail.com">info.lalumierdouce-restaurant.com</Link>
+                  <Link href="mailto:mutau85@gmail.com">
+                    info.lalumierdouce-restaurant.com
+                  </Link>
                 </Link>
                 <br />• <strong>Phone:</strong> +956 677 494 340
               </Text>
               <Hr />
               <Section>
                 <Text>
-                  <strong>Management</strong>
-                  <br />                 
-                </Text>
-                <Text>
-                  <br />
+                  <Heading as="h3">Management</Heading>
                   <strong>Contact Information:</strong>
                   <br />
-                  <strong>Phone:</strong> +956 677 494 340
+                  <strong>Phone: </strong> +956 677 494 340
                   <br />
-                  <strong>Email:</strong>
-                  <Link href="mailto:mutau85@gmail.com">info.lalumierdouce-restaurant.com</Link>
+                  <strong> Email: </strong>
+                  <Link href="mailto:mutau85@gmail.com">
+                    info.lalumierdouce-restaurant.com
+                  </Link>
                   <br />
-                  <strong>Address:</strong> 10725 NE Ocean Blvd #LOT 138 Jensen Beach, Florida
+                  <strong>Address:</strong> 10725 NE Ocean Blvd #LOT 138 Jensen
+                  Beach, Florida
                   <br />
                   <strong>Website:</strong>
                   <Link href="https://lalumierdouce-restaurant-demowebsite.vercel.app/">
                     www.lalumierdouce-restaurant.com
                   </Link>
                 </Text>
-                
               </Section>
             </Section>
           </Container>

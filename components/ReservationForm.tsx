@@ -53,12 +53,24 @@ export default function ReservationForm() {
           time,
         }),
       });
+
       toast.success(
         "Reservation submitted successfully! Kindly check your email to view your reservation details!",
         {
           duration: 5000,
         }
       );
+
+      // Reset the form after successful submission
+      setFormData({
+        name: "",
+        email: "",
+        organization: "",
+        guests: "",
+        checkInDate: "",
+        checkOutDate: "",
+        time: "",
+      });
     } catch (error) {
       toast.error("Failed to submit reservation.", {
         duration: 5000,
@@ -108,7 +120,9 @@ export default function ReservationForm() {
         className="p-4 border rounded"
       />
       <div className="flex flex-col gap-2">
-      <span className="text-11px text-gray-400 px-4">Please Select a Check In Date</span>
+        <span className="text-11px text-gray-400 px-4">
+          Please Select a Check In Date
+        </span>
         <input
           type="date"
           name="checkInDate"
@@ -119,7 +133,9 @@ export default function ReservationForm() {
         />
       </div>
       <div className="flex flex-col gap-2">
-      <span className="text-11px text-gray-400 px-4">Please Select a Check Out Date</span>
+        <span className="text-11px text-gray-400 px-4">
+          Please Select a Check Out Date
+        </span>
         <input
           type="date"
           name="checkOutDate"
@@ -130,7 +146,9 @@ export default function ReservationForm() {
         />
       </div>
       <div className="flex flex-col gap-2">
-      <span className="text-11px text-gray-400 px-4">Please Select Your Reservation Time</span>
+        <span className="text-11px text-gray-400 px-4">
+          Please Select Your Reservation Time
+        </span>
         <input
           type="time"
           name="time"
