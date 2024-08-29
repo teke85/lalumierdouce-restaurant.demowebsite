@@ -21,13 +21,13 @@ const TheMenu = () => {
       <div className="flex items-center p-10">
         <hr className="w-1/2" />
         <div className="flex w-1/2 justify-center">
-          <h2 className="w-1/2 text-[11px] text-center md:text-[26px] font-montserrat font-semibold">THE MENU</h2>
+          <h2 className="w-1/2 text-[11px] text-center md:text-[26px] font-montserrat font-bold md:font-semibold">THE MENU</h2>
         </div>
         <hr className="w-1/2" />
       </div>
       <div className="text-content w-2/4 items-center mx-auto justify-center flex flex-col text-gray-700 font-montserrat space-y-10">
-        <p className="text-center">Under the guidance of the skilled chef Japhet Sindoe, this fresh culinary venture reimagines traditional gastronomy with flair and contemporary touches, all the while honoring local producers and seasonal ingredients.</p>
-        <p className="text-center">At the heart of the experience lies a cuisine that is both refined and meticulous, offering an exquisite explosion of flavors with every mouthful. All of this is presented within an elegant and modern ambiance, promising a dining experience that is truly exceptional.</p>
+        <p className="text-center font-semibold">Under the guidance of the skilled chef Japhet Sindoe, this fresh culinary venture reimagines traditional gastronomy with flair and contemporary touches, all the while honoring local producers and seasonal ingredients.</p>
+        <p className="text-center font-semibold">At the heart of the experience lies a cuisine that is both refined and meticulous, offering an exquisite explosion of flavors with every mouthful. All of this is presented within an elegant and modern ambiance, promising a dining experience that is truly exceptional.</p>
         <motion.div
           className="grid grid-cols-1 gap-8 md:grid-cols-2"
           initial="hidden"
@@ -56,7 +56,7 @@ const TheMenu = () => {
           ))}
         </motion.div>
         <Link href="/the-menu" passHref>
-          <button className="p-2 border border-[#BCAF87] w-full text-[12px]">VIEW THE MENU</button>
+          <button className="p-2 border border-[#BCAF87] w-full text-[12px] font-bold">VIEW THE MENU</button>
         </Link>
       </div>
     </section>

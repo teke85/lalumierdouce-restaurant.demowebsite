@@ -89,7 +89,7 @@ export default function Details({
                   padding: "10px 20px",
                 }}
               >
-                <Heading as="h5">Manage your Reservation</Heading>
+                <Heading as="h4">Manage your Reservation</Heading>
               </Button>
               <Hr />
               <Text>
