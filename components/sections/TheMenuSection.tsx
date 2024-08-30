@@ -26,8 +26,8 @@ const TheMenu = () => {
         <hr className="w-1/2" />
       </div>
       <div className="text-content w-2/4 items-center mx-auto justify-center flex flex-col text-gray-700 font-montserrat space-y-10">
-        <p className="text-center font-semibold">Under the guidance of the skilled chef Japhet Sindoe, this fresh culinary venture reimagines traditional gastronomy with flair and contemporary touches, all the while honoring local producers and seasonal ingredients.</p>
-        <p className="text-center font-semibold">At the heart of the experience lies a cuisine that is both refined and meticulous, offering an exquisite explosion of flavors with every mouthful. All of this is presented within an elegant and modern ambiance, promising a dining experience that is truly exceptional.</p>
+        <p className="text-center font-normal text-gray-700">Under the guidance of the skilled chef Japhet Sindoe, this fresh culinary venture reimagines traditional gastronomy with flair and contemporary touches, all the while honoring local producers and seasonal ingredients.</p>
+        <p className="text-center font-normal text-gray-700">At the heart of the experience lies a cuisine that is both refined and meticulous, offering an exquisite explosion of flavors with every mouthful. All of this is presented within an elegant and modern ambiance, promising a dining experience that is truly exceptional.</p>
         <motion.div
           className="grid grid-cols-1 gap-8 md:grid-cols-2"
           initial="hidden"

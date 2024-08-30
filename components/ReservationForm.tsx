@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Toaster, toast } from "react-hot-toast";
 
 export default function ReservationForm() {
@@ -15,9 +15,19 @@ export default function ReservationForm() {
     time: "",
   });
 
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    const { name, email, guests, checkInDate, checkOutDate, time } = formData;
+    // Check if all required fields are filled
+    setIsButtonDisabled(
+      !name || !email || !guests || !checkInDate || !checkOutDate || !time
+    );
+  }, [formData]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -162,7 +172,10 @@ export default function ReservationForm() {
       <div className="md:col-span-2 flex justify-center">
         <button
           type="submit"
-          className="p-4 bg-[#272F3C] w-full md:w-1/2 text-white font-medium font-montserrat rounded-lg"
+          disabled={isButtonDisabled}
+          className={`p-4 w-full md:w-1/2 text-white font-medium font-montserrat rounded-lg ${
+            isButtonDisabled ? "bg-gray-400 cursor-not-allowed" : "bg-[#272F3C]"
+          }`}
         >
           SEND MESSAGE
         </button>

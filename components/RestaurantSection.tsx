@@ -63,9 +63,9 @@ export default function RestaurantSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <h3>
+            <h3 className="font-aboreto">
               A HISTORY
-              <br /> STARTED <span className="text-[#BCAF87]">EARLY</span>
+              <br /> STARTED <span className="text-[#BCAF87] font-aboreto">EARLY</span>
             </h3>
           </motion.div>
           <motion.div
@@ -129,8 +129,8 @@ export default function RestaurantSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <h3>
-              <span className="text-[#BCAF87]">WE COOK</span> ART
+            <h3 className="font-ibarra">
+              <span className="text-[#BCAF87] font-aboreto">WE COOK</span> ART
               <br /> WITH HEART
             </h3>
           </motion.div>
