@@ -18,7 +18,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-## 📖 Blog App
+## 📖 La Lumière Douce
 
 <a name="about-project"></a>
 
@@ -110,9 +110,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add a payment gateway for prepaid reservations.]**
-- [ ] **[Offer dynamic menus based on the time of day.]**
-- [ ] **[Add a gallery of restaurant events and dishes.]**
+- [ ] **Add a payment gateway for prepaid reservations.**
+- [ ] **Offer dynamic menus based on the time of day.**
+- [ ] **Add a gallery of restaurant events and dishes.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
