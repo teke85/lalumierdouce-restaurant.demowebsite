@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📗 Table of Contents
 
-## Getting Started
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-First, run the development server:
+## 📖 Blog App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<a name="about-project"></a>
+
+**La Lumière Douce** is a modern restaurant website concept that offers a seamless dining experience with a chic and elegant design. It includes an advanced reservation feature that allows users to book tables effortlessly and receive reservation details directly in their email inbox.
+
+## 🛠 Built With <a name="built-with"></a>
+
+- Next.js 14
+- React
+- Resend (for email integration)
+- React Email
+- TailwindCSS
+- VSCode
+- Vercel (for deployment)
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details> <summary>Client</summary> <ul> <li>Next.js</li> <li>React</li> <li>TailwindCSS</li> </ul> </details> <details> <summary>Email Service</summary> <ul> <li>Resend</li> <li>React Email</li> </ul> </details> <details> <summary>Deployment</summary> <ul> <li>Vercel</li> </ul> </details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Elegant restaurant website design with a modern, user-friendly interface**
+- **Reservation system that sends reservation details via email**
+- **Responsive design using TailwindCSS, ensuring accessibility across devices**
+- **Seamless email integration for reservation confirmations**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 - DEMO: [LIVE DEMO](https://lalumierdouce-restaurant-demowebsite.vercel.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Setup
+
+Clone this repository to your desired folder:
+
+Example commands:
+
+```sh
+  git clone https://github.com/teke85/lalumierdouce.git
+  cd lalumierdouce
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install this project with:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+    npm install
+```
 
-## Learn More
+### Usage
 
-To learn more about Next.js, take a look at the following resources:
+To run the project, execute the following command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+    npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Run tests
 
-## Deploy on Vercel
+To run tests, run the following command:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+    npm run test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>p>
+
+<!-- AUTHORS -->
+
+👤 **Isiteketo mutau**
+
+- GitHub: [@teke85](https://github.com/teke85)
+- Twitter: [@muttau](https://twitter.com/muttau)
+- LinkedIn: [isiteketo mutau](https://www.linkedin.com/in/isiteketo-mutau-736894241/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add a payment gateway for prepaid reservations.]**
+- [ ] **[Offer dynamic menus based on the time of day.]**
+- [ ] **[Add a gallery of restaurant events and dishes.]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/teke85/blog-app/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please give it a star!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank you tubers for providing help through videos.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./license) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
