@@ -138,6 +138,7 @@ export default function ReservationForm() {
           name="checkInDate"
           placeholder="Check-In Date"
           value={formData.checkInDate}
+          required
           onChange={handleChange}
           className="p-4 border rounded"
         />
@@ -152,6 +153,7 @@ export default function ReservationForm() {
           placeholder="Check-Out Date"
           value={formData.checkOutDate}
           onChange={handleChange}
+          required
           className="p-4 border rounded"
         />
       </div>

@@ -56,7 +56,7 @@ const TheMenu = () => {
           ))}
         </motion.div>
         <Link href="/the-menu" passHref>
-          <button className="p-2 border border-[#BCAF87] w-full text-[12px] font-bold">VIEW THE MENU</button>
+          <button className="p-2 border border-[#BCAF87] w-full text-[12px] px-10 font-bold">VIEW THE MENU</button>
         </Link>
       </div>
     </section>

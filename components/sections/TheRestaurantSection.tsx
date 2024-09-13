@@ -16,7 +16,7 @@ const TheRestaurantSection = () => {
           </p>
           <p className="font-normal md:font-normal text-gray-700 font-montserrat text-start">
             We are delighted to announce that our doors are now officially open!
-            Introducing The Elaboree, the meticulously chosen name for our brand
+            Introducing La Lumiere Douce Restaurant, the meticulously chosen name for our brand
             new restaurant, where we aim to provide you with a truly emotional
             dining experience through every delectable dish. You can locate us
             at 17 Main Avenue, situated in one of the most renowned areas of the
